@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #111;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-line {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
+    gap: 15px;
+    letter-spacing: -0.1px;
+}
+
+.lbl {
+    border: 1px solid #ccc;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.menu span {
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 12px;
+    cursor: default;
+}
+
+.btn-in {
+    background: #eee;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.hero-block {
+    text-align: center;
+    margin: 70px auto;
+    max-width: 750px;
+    padding: 60px 20px;
+    background-image: 
+        linear-gradient(to right, #f0f0f5 1px, transparent 1px),
+        linear-gradient(to bottom, #f0f0f5 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: center center;
+    mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+}
+
+.hero-block h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    margin: 20px 0;
+    color: #0c0c0d;
+}
+
+.desc {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-main {
+    background: #5c1d70;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.small-text {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.brands {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 35px 0;
+    margin-bottom: 100px;
+}
+
+.brands-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.brand-img {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+}
+
+.features {
+    text-align: center;
+    margin-bottom: 120px;
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h2 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link-more {
+    color: #5c1d70;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 40px;
+    cursor: default;
+}
+
+.cards-3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    max-width: 320px;
+}
+
+.item h3 {
+    margin: 15px 0 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.cards-2 {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.big-card {
+    flex: 1;
+    background: #f9f5fc;
+    border-radius: 16px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 240px;
+    height: 340px;
+    background: #111;
+    border-radius: 24px 24px 0 0;
+    position: absolute;
+    bottom: -40px;
+    left: 120px;
+}
+
+.magic-stick {
+    position: absolute;
+    width: 14px;
+    height: 120px;
+    background: linear-gradient(to top, transparent, #a855f7);
+    border-radius: 7px;
+    top: 65px;
+    left: 125px;
+    transform: rotate(-35deg);
+    z-index: 20;
+}
+
+.magic-stick::before {
+    content: "✦";
+    position: absolute;
+    color: #c084fc;
+    font-size: 32px;
+    top: -26px;
+    left: -8px;
+    transform: rotate(35deg);
+}
+
+.magic-stick::after {
+    content: "✦";
+    position: absolute;
+    color: #e9d5ff;
+    font-size: 18px;
+    top: -12px;
+    left: -22px;
+    transform: rotate(15deg);
+}
+
+.notch {
+    width: 80px;
+    height: 15px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+}
+
+.widget {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 340px;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.w-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.w-num {
+    font-size: 12px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.w-price {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.w-foot {
+    font-size: 11px;
+    color: #999;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+.stats-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    border-top: 1px solid #eee;
+    margin-bottom: 60px;
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat-item {
+    flex: 0 1 248px;
+    text-align: center;
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    width: 248px;
+    margin: 0 auto;
+}
+
+.num {
+    font-size: 40px;
+    color: #5c1d70;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.stat-item b {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.review {
+    text-align: center;
+    margin: 120px auto;
+    max-width: 800px;
+}
+
+.review-logo-wrap {
+    margin-bottom: 30px;
+}
+
+.review-logo {
+    height: 36px;
+    max-width: 140px;
+    width: auto;
+    object-fit: contain;
+}
+
+.quote {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    color: #18181b;
+    letter-spacing: -0.5px;
+}
+
+.user-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+
+.user-info b {
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
+    color: #111;
+}
+
+.user-info span {
+    font-size: 13px;
+    color: #71717a;
+    display: block;
+    margin-top: 2px;
+}
+
+.rating-stars {
+    color: #f59e0b;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+.cta-block {
+    text-align: center;
+    margin: 120px 0;
+}
+
+.cta-block h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding: 80px 0 40px 0;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.f-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.f-info {
+    max-width: 320px;
+}
+
+.f-info p {
+    font-size: 14px;
+    color: #5c5c64;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.f-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 750px;
+}
+
+.f-col h4 {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+.f-col span {
+    display: block;
+    color: #5c5c64;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    cursor: default;
+}
+
+.f-bottom {
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.f-soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.f-soc a {
+    color: #71717a;
+    cursor: default;
+}
+
+.f-bottom p {
+    font-size: 12px;
+    color: #888;
+}
